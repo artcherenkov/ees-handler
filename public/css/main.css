@@ -7,6 +7,7 @@
 
 .controls {
   margin-bottom: 30px;
+  margin-left: 50px;
 }
 
 .table {
@@ -18,13 +19,26 @@
 }
 
 .table__row {
+  position: relative;
   font-size: 14px;
   display: grid;
   grid-template-columns: 4% repeat(6, 16%);
 }
 
-.table__headers {
+.table__cell-edit-btn {
+  display: none;
+  position: absolute;
+  right: -22px;
+  cursor: pointer;
+}
+
+.table__row:hover .table__cell-edit-btn {
+  display: block;
+}
+
+.table__headers .table__cell {
   text-align: center;
+  font-size: 14px;
 }
 
 .table__row--empty {
@@ -41,3 +55,14 @@
   border-right: 1px solid black;
   text-align: center;
 }
+
+.table__cell--section-title {
+  text-align: left;
+  grid-column: 1 / span 7;
+  text-decoration: underline;
+}
+
+.table__cell--object-name {
+  text-align: left;
+}
+
