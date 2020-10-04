@@ -1,11 +1,11 @@
-import RowView from "./view/row.js";
-import {render, RenderPosition} from "./utils/render.js";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-const tableComponent = document.querySelector(`.table`);
-const addRowButton = document.querySelector(`.controls__add-row`);
+import Table from "./components/table/table.jsx";
 
-addRowButton.addEventListener(`click`, (evt) => {
-  evt.preventDefault();
-  const newRow = new RowView();
-  render(tableComponent, newRow, RenderPosition.BEFOREEND);
-});
+const root = document.getElementById(`root`);
+
+ReactDOM.render(
+    <Table />,
+    root
+);

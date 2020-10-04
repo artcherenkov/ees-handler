@@ -9,48 +9,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="controls">
-        <button type="button" class="controls__add-row">Добавить строку</button>
-      </div>
-      <form method="POST" action="#">
-        <div class="table">
-          <div class="table__row table__headers">
-            <h2 class="table__cell">№ п/п</h2>
-            <h2 class="table__cell">Наименование объекта строительства</h2>
-            <h2 class="table__cell">Обоснование</h2>
-            <h2 class="table__cell">Единица измерения</h2>
-            <h2 class="table__cell">Количество</h2>
-            <h2 class="table__cell">Стоимость единицы измерения в ценах 2019 г., тыс. тенге</h2>
-            <h2 class="table__cell">Стоимость в текущем (прогнозном) году, тыс. тенге</h2>
-          </div>
-          <div class="table__row">
-            <p class="table__cell">1</p>
-            <p class="table__cell">2</p>
-            <p class="table__cell">3</p>
-            <p class="table__cell">4</p>
-            <p class="table__cell">5</p>
-            <p class="table__cell">6</p>
-            <p class="table__cell">7</p>
-          </div>
-
-          <div class="table__row table__row--empty"></div>
-
-          <div class="table__row table__row--section">
-            <h2 class="table__cell table__cell--section-title">1. Основные объекты строительства</h2>
-          </div>
-
-          <div class="table__row">
-            <span class="table__cell-edit-btn">edit</span>
-            <p class="table__cell">1</p>
-            <p class="table__cell table__cell--object-name table__cell--writable">Детский сад на 140 мест в г.Усть-Каменогорск</p>
-            <p class="table__cell">81-030103-05</p>
-            <p class="table__cell">место</p>
-            <p class="table__cell">140</p>
-            <p class="table__cell">4 424,119</p>
-            <p class="table__cell">619 376,660</p>
-          </div>
-        </div>
-      </form>
+      <div id="root"></div>
     </div>
     <script src="bundle.js"></script>
   </body>
